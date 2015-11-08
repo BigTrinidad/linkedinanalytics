@@ -1,12 +1,12 @@
 require 'rubygems'
-require 'linkedin-oauth2'
+require_relative './lib/linkedin-analytics.rb'
 require './config'
 
 class LiData
 	attr_accessor :url
 
 	def initialize
-		@oauth = LinkedIn::OAuth2.new
+		@oauth = LinkedInAnalytics::OAuth2.new
 		@url = @oauth.auth_code_url(:scope => "r_basicprofile rw_company_admin r_emailaddress w_share")
 	end
 

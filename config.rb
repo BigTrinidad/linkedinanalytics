@@ -1,8 +1,7 @@
-
 ENV["LINKEDIN_CLIENT_ID"] = '77xdly13q1h6wx'
 ENV["LINKEDIN_CLIENT_SECRET"] = 'FPFVihjDuz81F2so'
 
-LinkedIn.configure do |config|
+LinkedInAnalytics.configure do |config|
   config.client_id     = ENV["LINKEDIN_CLIENT_ID"]
   config.client_secret = ENV["LINKEDIN_CLIENT_SECRET"]
 
