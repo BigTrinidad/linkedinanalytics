@@ -3,6 +3,7 @@ require_relative './lib/linkedin-analytics.rb'
 require './config'
 
 class LiData
+	#testing linkedin analytics
 	attr_accessor :url
 
 	def initialize
