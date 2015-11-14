@@ -13,6 +13,11 @@ class LiData
 	def get_access(code)
 		@access_token = @oauth.get_access_token(code)
 	end
+
+	def company_admin(token, company)
+		@company = LinkedInAnalytics::APIResource.new(token)
+		@company.sharing_enabled(company)
+	end
 end
 
 
